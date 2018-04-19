@@ -1,3 +1,110 @@
+html {
+  background-color: #fff;
+  font-family: open-sans, sans-serif;
+}
+
+header {
+  display: inline-block;
+  background-color: #e2e2e2;
+  width: 100%;
+  padding: 0;
+}
+
+h1 {
+  font-family: Roboto, sans-serif;
+  color: #001195;
+}
+
+h2 {
+  color: #001195;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav li a {
+  display: inline-block;
+  padding: 14px 16px;
+  color: #0378D9;
+  text-decoration: none;
+  text-align: left;
+}
+
+nav a.current {
+  text-decoration: underline;
+}
+
+.try-business-cta {
+  text-align: right;
+}
+
+button {
+  background-color: #0378D9;
+  border-color: #0378D9;
+}
+
+.btn-small {
+  font-size: .7rem;
+}
+
+.btn-big {
+  font-size: 1rem;
+}
+
 .top-section {
-  background-image: url(images/dropbox_logo.svg);
+  position: relative;
+  background:
+    linear-gradient(
+      rgba(240, 249, 255, 0.6),
+      rgba(204, 236, 255, 0.6)
+      ),
+    url("../images/background-image-first-section.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.top-section div {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dropboxlogo {
+  display: inline-block;
+  width: 100px;
+}
+
+.third-section {
+  background-color: #bbb
+}
+
+h3 {
+  color: #001195;
+}
+
+h4 {
+  color: #001195;
+}
+
+.third-section {
+  background-color: #0378D9;
+  color: #fff;
+}
+
+.third-section h4 {
+  color: #fff;
 }
