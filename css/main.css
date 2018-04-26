@@ -5,9 +5,10 @@ html {
 
 header {
   display: inline-block;
-  background-color: #e2e2e2;
+  background-color: #fff;
   width: 100%;
   padding: 0;
+  margin: 0 auto;
 }
 
 h1 {
@@ -20,19 +21,27 @@ h2 {
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 0 1.6em 0;
   overflow: hidden;
-  background-color: white;
+  float: right;
 }
 
 nav ul li {
   display: inline-block;
+  padding-left: 1.3em;
 }
 
-nav li a {
+.dropboxlogo {
   display: inline-block;
-  padding: 14px 16px;
+  width: 110px;
+  float: left;
+  padding-bottom: 1.6em;
+  padding-top: 1.5em;
+}
+
+nav ul li a {
+  display: inline-block;
   color: #0378D9;
   text-decoration: none;
   text-align: left;
@@ -49,6 +58,11 @@ nav a.current {
 button {
   background-color: #0378D9;
   border-color: #0378D9;
+}
+
+button:hover {
+  background-color: #001195;
+  border-color: #001195;
 }
 
 .btn-small {
@@ -71,21 +85,16 @@ button {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
 }
 
 .top-section div {
   position: absolute;
   width: 100%;
-  bottom: 0;
-  margin: 0 auto;
+  height: 50%;
   text-align: center;
-}
-
-.dropboxlogo {
-  display: inline-block;
-  width: 100px;
+  margin-top: 0 auto;
 }
 
 .third-section {
@@ -107,4 +116,142 @@ h4 {
 
 .third-section h4 {
   color: #fff;
+}
+
+.round-image {
+  width: 92px;
+  margin: 0 auto;
+}
+
+.fifth-section {
+  background-color: #0378D9;
+}
+
+.fifth-section button {
+  background-color: #fff;
+  color: #0378D9;
+  border-color: #fff;
+}
+
+.fifth-section button:hover {
+  background-color: #001195;
+  border-color: #001195;
+  color: #fff;
+}
+
+
+.fifth-section h3 {
+  color: #fff;
+}
+
+.fourth-section-features {
+  background-color: #ebeffa;
+}
+
+<!-- Pricing -->
+
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+  margin-top: 38px;
+}
+
+.best-value-section {
+  margin-top: 0;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #0378D9;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #0378D9;
+  color: white;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.price .blue {
+  background-color: #0378D9;
+  color: #fff;
+}
+
+.button {
+  background-color: #0378D9;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: #001195;
+}
+
+.price .best-value {
+  padding: 5px;
+  background-color: #001195;
+  color: white;
+  border-bottom: none;
+}
+
+.month {
+  background-color: #0378D9;
+  color: white;
+}
+
+a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+a:hover {
+  color: #001195;
+}
+
+<!-- Learn More -->
+
+@media only screen and (min-width: 38em) {
+
+  .round-image {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 38em) {
+
+  .top-section {
+    height: 80vh;
+  }
+
+  .columns {
+    width: 100%;
+  }
+
 }
