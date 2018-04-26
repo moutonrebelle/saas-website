@@ -55,14 +55,21 @@ nav a.current {
   text-align: right;
 }
 
-button {
+.button {
   background-color: #0378D9;
+  border: solid;
   border-color: #0378D9;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-button:hover {
+.button:hover {
   background-color: #001195;
   border-color: #001195;
+  color: #fff;
 }
 
 .btn-small {
@@ -127,13 +134,13 @@ h4 {
   background-color: #0378D9;
 }
 
-.fifth-section button {
+.fifth-section .button {
   background-color: #fff;
   color: #0378D9;
   border-color: #fff;
 }
 
-.fifth-section button:hover {
+.fifth-section .button:hover {
   background-color: #001195;
   border-color: #001195;
   color: #fff;
@@ -146,6 +153,11 @@ h4 {
 
 .fourth-section-features {
   background-color: #ebeffa;
+}
+
+footer {
+  background-color: #001195;
+  color: #fff;
 }
 
 <!-- Pricing -->
@@ -199,20 +211,6 @@ h4 {
   color: #fff;
 }
 
-.button {
-  background-color: #0378D9;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.button:hover {
-  background-color: #001195;
-}
-
 .price .best-value {
   padding: 5px;
   background-color: #001195;
@@ -233,8 +231,6 @@ a {
 a:hover {
   color: #001195;
 }
-
-<!-- Learn More -->
 
 @media only screen and (min-width: 38em) {
 
