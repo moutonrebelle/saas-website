@@ -11,53 +11,66 @@
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <ul class="skip-links">
+    <li><a href="#nav">Skip to navigation</a></li>
+    <li><a href="#main">Skip to main content</a></li>
+  </ul>
+  <header role="banner" id="banner" tabindex="0">
     <div class="gutter-1-2">
-    <div id="logo">
-      <a class="center-text current home island-1-2" href="index.html"><img class="dropboxlogo" src="images/dropbox-logo.png" alt="Dropbox"></a>
-    </div>
-    <nav>
-      <ul class="nav list-group">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="sign-up.html">Subscription</a></li>
-        <li><a class="current" href="tour.html">Learn More</a></li>
-        <li><a href="sign-up.html" class="try-business-cta button btn-small island-1-4">Try free for 30 days</a></li>
-      </ul>
-    </nav>
+      <div id="logo" tabindex="0">
+        <a class="center-text current home island-1-2" href="index.html"><img class="dropboxlogo" src="images/dropbox-logo.png" alt="Dropbox"></a>
       </div>
-        </header>
-    <main class="island">
+      <nav role="navigation" id="nav" tabindex="0">
+        <ul class="nav list-group">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="sign-up.html">Subscription</a></li>
+          <li><a class="current" href="tour.html">Learn More</a></li>
+          <li><a href="sign-up.html" class="try-business-cta btn btn-small island-1-4">Try free for 30 days</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main role="main" id="main" tabindex="0">
     <section>
-    <h2 class="mega text-center push-none">Learn More</h2>
-    <h3 class="kilo text-center push">Frequently Asked Questions</h3>
-    <div class="table-wrapper scrollable">
-    <table class="push">
-      <tr>
-        <th>Question</th>
-        <th>Answer</th>
-      </tr>
-      <tbody>
-      <tr class="pad-b">
-        <td class="question" scope="row">What is Dropbox Business user?</td>
-        <td class="answer" scope="row">A user is any person or role on your team with a unique email address. Each team member should have his or her own user license.</td>
-      </tr>
-      <tr>
-        <td class="question" scope="row">How much space does my team get?</td>
-        <td class="answer" scope="row">Dropbox Business provides three plans to fit your team’s needs. The Standard plan gives your team 2 TB of shared storage.</td>
-      </tr>
-      <tr>
-        <td class="question" scope="row">Why do I need to input my credit card for the free trial?</td>
-        <td class="answer" scope="row">We require credit card information for the trial to prevent fraud. But if you cancel before the trial period is over, there won’t be any charges.</td>
-      </tr>
-      <tr>
-        <td class="question" scope="row">Can I have fewer than 3 users on my account?</td>
-        <td class="answer" scope="row">Yes. The Dropbox Business base package includes 3 users, but you don’t need to use all the licenses right away.</td>
-      </tr>
-    </tbody>
-    </table>
-  <a href="sign-up.html"><button class="try-business-cta btn-big">Try free for 30 days</button></a>
-</section>
-</main>
+      <h1 class="mega text-center push-none">Learn More</h1>
+      <h2 class="kilo text-center push">Frequently Asked Questions</h2>
+      <div class="embed embed-1by1">
+        <div class="table-wrapper scrollable embed-item grid">
+          <table class="push unit xs-1 s-1 m-1 l-1">
+            <caption class="not-italic bold">F.A.Q</caption>
+            <thead>
+              <tr>
+                <th scope="col">Question</th>
+                <th scope="col">Answer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="pad-b">
+                <td class="question">What is Dropbox Business user?</td>
+                <td class="answer">A user is any person or role on your team with a unique email address. Each team member should have his or her own user license. <a href="sign-up.html">Get Dropbox now</a></td>
+              </tr>
+              <tr>
+                <td class="question">How much space does my team get?</td>
+                <td class="answer">Dropbox Business provides three plans to fit your team’s needs. The Standard plan gives your team 2 TB of shared storage. <a href="sign-up.html">Get Dropbox now</a></td>
+              </tr>
+              <tr>
+                <td class="question">Why do I need to input my credit card for the free trial?</td>
+                <td class="answer">We require credit card information for the trial to prevent fraud. But if you cancel before the trial period is over, there won’t be any charges. <a href="sign-up.html">Get Dropbox now</a></td>
+              </tr>
+              <tr>
+                <td class="question">Can I have fewer than 3 users on my account?</td>
+                <td class="answer">Yes. The Dropbox Business base package includes 3 users, but you don’t need to use all the licenses right away. <a href="sign-up.html">Get Dropbox now</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <p class="text-center island-1-2 push-0">Conception by Laura Meguerditchian</p>
+  </footer>
 </body>
+</html>

@@ -17,14 +17,18 @@ h1 {
 }
 
 h2 {
-  color: #001195;
+  color: black;
 }
 
 nav ul {
   margin: 0 auto;
-  padding: 0 0 1.6em 0;
+  padding: 0 0 1.6em;
   overflow: hidden;
   float: right;
+}
+
+a:focus {
+  outline: 3px solid black;
 }
 
 nav ul li {
@@ -42,9 +46,13 @@ nav ul li {
 
 nav ul li a {
   display: inline-block;
-  color: #0378D9;
+  color: black;
   text-decoration: none;
   text-align: left;
+}
+
+nav a:hover {
+  color: #0378d9;
 }
 
 nav a.current {
@@ -55,39 +63,31 @@ nav a.current {
   text-align: right;
 }
 
-.button {
-  background-color: #0378D9;
+.btn {
+  background-color: black;
   border: solid;
-  border-color: #0378D9;
+  border-color: black;
   border-radius: 4px;
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
 }
 
 .button:hover {
-  background-color: #001195;
-  border-color: #001195;
+  background-color: #0378d9;
+  border-color: #0378d9;
   color: #fff;
 }
 
 .btn-small {
-  font-size: .7rem;
-}
-
-.btn-big {
-  font-size: 1rem;
+  background-color: #98c9ec;
+  border-color: #98c9ec;
+  color: black;
 }
 
 .top-section {
   position: relative;
-  background:
-    linear-gradient(
-      rgba(240, 249, 255, 0.6),
-      rgba(204, 236, 255, 0.6)
-      ),
-    url("../images/background-image-first-section.jpg");
+  background: linear-gradient(rgba(240, 249, 255, .6), rgba(204, 236, 255, .6)), url("../images/background-image-first-section.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -96,16 +96,9 @@ nav a.current {
   overflow: hidden;
 }
 
-.top-section div {
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  text-align: center;
-  margin-top: 0 auto;
-}
-
 .third-section {
-  background-color: #bbb
+  background-color: #98c9ec;
+  color: #001195;
 }
 
 h3 {
@@ -116,13 +109,8 @@ h4 {
   color: #001195;
 }
 
-.third-section {
-  background-color: #0378D9;
-  color: #fff;
-}
-
 .third-section h4 {
-  color: #fff;
+  color: #001195;
 }
 
 .round-image {
@@ -131,21 +119,20 @@ h4 {
 }
 
 .fifth-section {
-  background-color: #0378D9;
+  background-color: #0378d9;
 }
 
 .fifth-section .button {
   background-color: #fff;
-  color: #0378D9;
+  color: black;
   border-color: #fff;
 }
 
 .fifth-section .button:hover {
-  background-color: #001195;
-  border-color: #001195;
+  background-color: black;
+  border-color: black;
   color: #fff;
 }
-
 
 .fifth-section h3 {
   color: #fff;
@@ -160,39 +147,26 @@ footer {
   color: #fff;
 }
 
-<!-- Pricing -->
-
-* {
-  box-sizing: border-box;
-}
-
-.columns {
-  float: left;
-  width: 33.3%;
-  padding: 8px;
-  margin-top: 38px;
-}
-
 .best-value-section {
   margin-top: 0;
 }
 
 .price {
   list-style-type: none;
-  border: 1px solid #0378D9;
+  border: 1px solid #0378d9;
   margin: 0;
   padding: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .price:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  box-shadow: 0 8px 12px rgba(0, 0, 0, .2);
 }
 
 .price .header {
-  background-color: #0378D9;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .price li {
@@ -203,50 +177,71 @@ footer {
 
 .price .grey {
   background-color: #eee;
-  font-size: 20px;
 }
 
 .price .blue {
-  background-color: #0378D9;
+  background-color: #001195;
   color: #fff;
 }
 
 .price .best-value {
   padding: 5px;
-  background-color: #001195;
+  background-color: black;
   color: white;
   border-bottom: none;
 }
 
 .month {
-  background-color: #0378D9;
+  background-color: #001195;
   color: white;
 }
 
 a {
   text-decoration: underline;
-  color: #fff;
+  color: #001195;
 }
 
 a:hover {
+  color: black;
+}
+
+.contact {
+  color: white;
+  text-decoration: none;
+}
+
+.contact:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.sign-up legend {
+  color: black;
+}
+
+.sign-up label {
+  color: black;
+}
+
+label a {
+  color: black;
+}
+
+label a:hover {
   color: #001195;
 }
 
 @media only screen and (min-width: 38em) {
-
-  .round-image {
-    width: 100%;
-  }
-
-}
-
-@media only screen and (max-width: 38em) {
 
   .top-section {
     height: 80vh;
   }
 
   .columns {
+    width: 100%;
+  }
+
+  .round-image {
     width: 100%;
   }
 
