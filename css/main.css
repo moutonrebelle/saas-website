@@ -4,11 +4,7 @@ html {
 }
 
 header {
-  display: inline-block;
   background-color: #fff;
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
 }
 
 h1 {
@@ -21,10 +17,7 @@ h2 {
 }
 
 nav ul {
-  margin: 0 auto;
-  padding: 0 0 1.6em;
   overflow: hidden;
-  float: right;
 }
 
 a:focus {
@@ -33,22 +26,17 @@ a:focus {
 
 nav ul li {
   display: inline-block;
-  padding-left: 1.3em;
 }
 
 .dropboxlogo {
-  display: inline-block;
-  width: 110px;
-  float: left;
-  padding-bottom: 1.6em;
-  padding-top: 1.5em;
+  display: block;
+  width: 150px;
 }
 
 nav ul li a {
   display: inline-block;
   color: black;
   text-decoration: none;
-  text-align: left;
 }
 
 nav a:hover {
